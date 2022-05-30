@@ -20,7 +20,7 @@ async def answer(bot, query):
         await query.answer(
             results=[],
             cache_time=0,
-            switch_pm_text='Kamu gk punya akses, silahkan hubungi admin dulu',
+            switch_pm_text='Ente tidak punya akses...',
             switch_pm_parameter="subscribe",
         )
         return
@@ -52,7 +52,7 @@ async def answer(bot, query):
     if results:
         switch_pm_text = f"{emoji.FILE_FOLDER} Database"
         if text:
-            switch_pm_text = f"{emoji.SEARCH} Hasil Pencarian Untuk {text}"
+            switch_pm_text = f"🔎 Hasil Pencarian Untuk {text}"
 
         await query.answer(
             results=results,
