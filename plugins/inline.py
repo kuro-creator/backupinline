@@ -79,7 +79,7 @@ def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [
         [
-            InlineKeyboardButton('Bagikan Bot', url=url),
+            InlineKeyboardButton('🔗 Bagikan Bot', url=url),
         ]
     ]
     return InlineKeyboardMarkup(buttons)
